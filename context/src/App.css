@@ -1,0 +1,17 @@
+.app {
+  height: 100vh;
+  text-align: center;
+  padding-top: 270px;
+
+}
+
+
+.app.dark {
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding-top: 270px;
+
+}
+
+
