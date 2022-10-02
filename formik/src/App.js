@@ -5,9 +5,9 @@ function App() {
 
   const {handleSubmit, handleChange, values} = useFormik({
     initialValues: {
-      firstName: "Halil",
-          lastName: "Peker",
-          email: "halilpekeer@gmail.com",
+      firstName: "Ahmed",
+          lastName: "Karaçor",
+          email: "ahmedkaracor@gmail.com",
           gender: "male",
           hobies: [],
           country: "Türkiye",
@@ -21,19 +21,20 @@ function App() {
       <h1>Sign Up</h1>
 
           <form onSubmit={handleSubmit}>
-            <label htmlFor="firstName">First Name</label>
+
+            <label htmlFor="lastName">Soyisim</label>
             <input
-              name="firstName"
-              value={values.firstName}
+              name="lastName"
+              value={values.lastName}
               onChange={handleChange}
             />
             <br />
             <br />
 
-            <label htmlFor="lastName">Last Name</label>
+            <label htmlFor="firstName">İsim</label>
             <input
-              name="lastName"
-              value={values.lastName}
+              name="firstName"
+              value={values.firstName}
               onChange={handleChange}
             />
             <br />
@@ -44,16 +45,7 @@ function App() {
             <br />
             <br />
 
-            <span>Male</span>
-            <input
-              type="radio"
-              name="gender"
-              onChange={handleChange}
-              value="male"
-              checked={values.gender === "male"}
-            />
-
-            <span>Female</span>
+            <span>Kız</span>
             <input
               type="radio"
               name="gender"
@@ -63,6 +55,17 @@ function App() {
             />
             <br />
             <br />
+
+            
+            <span>Erkek</span>
+            <input
+              type="radio"
+              name="gender"
+              onChange={handleChange}
+              value="male"
+              checked={values.gender === "male"}
+            />
+
 
             <div>
               Fotball
@@ -106,7 +109,7 @@ function App() {
             <br />
             <br />
 
-            <button type="submit">Submit</button>
+            <button type="submit">Onayla</button>
 
             <br />
             <br />
